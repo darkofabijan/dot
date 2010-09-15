@@ -1,0 +1,12 @@
+shell -${SHELL}
+
+# GNU Screen scrolling
+termcapinfo xterm* ti@:te@
+
+caption always '%{= wk}[ %{k}%H %{k}][%= %{= wk}%?%-Lw%?%{r}(%{r}%n*%f%t%?(%u)%?%{r})%{k}%?%+Lw%?%?%= %{k}][%{b} %d/%m %{k}%c %{k}]'
+
+defscrollback 2048
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+vbell off
