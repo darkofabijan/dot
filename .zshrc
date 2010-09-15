@@ -11,6 +11,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# prompt (http://github.com/jcorbin/zsh-git)
+setopt promptsubst
+# Load the prompt theme system
+autoload -U promptinit
+promptinit
+# Use the wunjo prompt theme
+prompt wunjo
+
 # unix
 alias ll="ls -lah"
 
