@@ -28,3 +28,4 @@ alias g="git"
 # rails
 alias sc="./script/console"
 alias ss="./script/server"
+alias cwip="cucumber --profile wip"
