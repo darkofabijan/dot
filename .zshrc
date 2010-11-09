@@ -11,6 +11,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export EDITOR=vim
+
 # prompt (http://github.com/jcorbin/zsh-git)
 setopt promptsubst
 # Load the prompt theme system
