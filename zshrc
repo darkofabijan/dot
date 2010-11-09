@@ -13,6 +13,12 @@ compinit
 
 export EDITOR=vim
 
+# use incremental search
+bindkey ^R history-incremental-search-backward
+
+# enter directories without cd
+setopt auto_cd
+
 # prompt (http://github.com/jcorbin/zsh-git)
 setopt promptsubst
 # Load the prompt theme system
@@ -21,14 +27,7 @@ promptinit
 # Use the wunjo prompt theme
 prompt wunjo
 
-# unix
-alias ll="ls -lah"
-
-# git
-alias g="git"
-
-# rails
-alias sc="./script/console"
-alias ss="./script/server"
-alias cwip="cucumber --profile wip"
-alias resq="QUEUES=* VERBOSE=1 rake environment resque:work"
+# use aliases
+if [ -e "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi

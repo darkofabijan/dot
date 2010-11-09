@@ -1,0 +1,11 @@
+alias g="git"
+alias gi="sudo gem install"
+
+# unix
+alias ll="ls -lah"
+
+# rails
+alias sc="./script/console"
+alias ss="./script/server"
+alias cwip="cucumber --profile wip"
+alias resq="QUEUES=* VERBOSE=1 rake environment resque:work"
