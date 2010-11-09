@@ -1,0 +1,21 @@
+[color]
+  branch = auto
+  status = auto
+  diff = auto
+  ui = auto
+[push]
+  default = current
+[alias]
+  a = add
+  st = status
+  ci = commit
+  ca = commit --amend
+  br = branch
+  co = checkout
+  df = diff
+  dfc = diff --cached
+  lg = log -p
+  who = shortlog -s --
+  pl = pull
+  ps = push
+
