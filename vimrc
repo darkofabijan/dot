@@ -39,6 +39,7 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 nnoremap <F2> :e ~/.vimrc<CR>
+nnoremap <F3> :e ~/dot/vim/bundle/snipmate/snippets/.<CR>
 nnoremap <F6> :BufExplorer<CR>
 nnoremap <F7> :!rspec %<CR>
 

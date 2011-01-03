@@ -182,9 +182,30 @@ snippet select
 		<option value="${3:option}">${4:$3}</option>
 	</select>${5}
 snippet table
-	<table border="${1:0}">
-		<tr><th>${2:Header}</th></tr>
-		<tr><th>${3:Data}</th></tr>
+	<table>
+		<thead>
+			<tr>
+				<th>${1:Header}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>${2:Data}</td>
+			</tr>
+		</tbody>
 	</table>${4}
+snippet tr
+	<tr>${1}</tr>
+snippet td
+	<td>${1}</td>
 snippet textarea
 	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+snippet dl
+	<dl>
+		<dt>${1:Term}</dt>
+		<dd>${2:Definition}</dd>
+	</dl>
+snippet dt
+	<dt>${1}</dt>
+snippet dd
+	<dd>${1}</dd>
