@@ -1,8 +1,7 @@
-alias g="git"
-alias gi="sudo gem install"
-
 # unix
 alias ll="ls -lah"
+alias g="git"
+alias v="vim"
 
 # rails
 alias sc="./script/console"
