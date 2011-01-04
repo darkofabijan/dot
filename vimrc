@@ -44,4 +44,5 @@ nnoremap <F6> :BufExplorer<CR>
 nnoremap <F7> :!rspec %<CR>
 
 
+autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
