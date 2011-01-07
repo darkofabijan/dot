@@ -2,13 +2,18 @@
 alias ll="ls -lah"
 alias g="git"
 alias v="vim"
+alias ack="ack-grep"
 
 # rails
 alias sc="./script/console"
 alias ss="./script/server"
 alias sl="./script/launch"
 alias resq="QUEUES=* VERBOSE=1 rake environment resque:work"
+alias re="rails"
+alias r="rake"
 alias rs="rake spec"
 alias rr="rake routes"
 alias rc="rake cucumber"
 alias rcw="rake cucumber:wip"
+alias rdbm="rake db:migrate"
+alias rdbtp="rake db:test:prepare"
