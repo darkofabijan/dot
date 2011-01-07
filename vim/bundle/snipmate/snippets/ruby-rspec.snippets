@@ -1,6 +1,12 @@
 # rspec
 snippet spechelper
-	require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')${1}
+	require 'spec_helper'${1}
+snippet let
+	let(:${1}) { ${2} }
+snippet bef
+	before do
+		${1}
+	end
 
 # describe
 snippet des
@@ -41,7 +47,7 @@ snippet after-
 
 # it should
 snippet it
-	it "should ${1:description}" do
+	it "${1:description}" do
 		${2}
 	end
 snippet itsh

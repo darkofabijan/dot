@@ -87,9 +87,11 @@ snippet shrender_page_with_metadata
 # shoulda contexts
 snippet cont
 	context "${1:description}" do
-		setup do
-			${2}
+
+		it "${2:desc}" do
+			${3}
 		end
+
 	end
 snippet sh
 	should "${1:description}" do
