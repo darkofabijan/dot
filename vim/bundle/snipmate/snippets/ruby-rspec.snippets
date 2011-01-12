@@ -58,7 +58,9 @@ snippet itshbe
 	it "should ${1:description}" do
   		${2:model}.should be_${3}
 	end
-
+snippet itshdbc
+	it { should have_db_column(:${1}).of_type(:${2}) }
+	${3}
 # matchers
 snippet sheq
 	${1:targe}.should == ${2}
