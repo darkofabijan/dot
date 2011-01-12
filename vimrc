@@ -13,7 +13,9 @@ set nowritebackup
 syntax on
 set nohlsearch
 
-set autoindent smartindent
+set autoindent
+
+filetype plugin indent on
 
 " Softtabs, 2 spaces
 set tabstop=2
