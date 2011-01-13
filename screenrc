@@ -10,3 +10,8 @@ startup_message off
 hardstatus on
 hardstatus alwayslastline
 vbell off
+
+screen -t Vim
+screen -t Zsh
+screen -t Console
+screen -t Server
