@@ -35,13 +35,17 @@ set list listchars=tab:»·,trail:·
 set number
 set numberwidth=5
 
+" Colors
+set t_Co=256
+colorscheme inkpot
+
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 nnoremap <F2> :e ~/.vimrc<CR>
-nnoremap <F3> :e ~/dot/vim/bundle/snipmate/snippets/.<CR>
+noremap <F3> :e ~/dot/vim/bundle/snipmate/snippets/.<CR>
 nnoremap <F6> :BufExplorer<CR>
 nnoremap <F7> :!rspec %<CR>
 
