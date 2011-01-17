@@ -38,6 +38,7 @@ set numberwidth=5
 " Colors
 set t_Co=256
 colorscheme inkpot
+set cursorline!
 
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
