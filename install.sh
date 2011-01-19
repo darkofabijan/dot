@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for f in zshrc zshenv zsh vimrc vim screenrc gitconfig gemrc aliases
+for f in zshrc zshenv zsh vimrc vim screenrc gitconfig gemrc aliases autotest
 do
   ln -s ~/dot/$f ~/.$f
 done
