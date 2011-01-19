@@ -40,15 +40,20 @@ set t_Co=256
 colorscheme inkpot
 set cursorline!
 
+" BufExplorer configuration
+let g:bufExplorerDefaultHelp=0
+let g:bufExplorerShowRelativePath=1
+
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 nnoremap <F2> :e ~/.vimrc<CR>
-noremap <F3> :e ~/dot/vim/bundle/snipmate/snippets/.<CR>
-nnoremap <F6> :BufExplorer<CR>
-nnoremap <F7> :!rspec %<CR>
+nnoremap <F3> :e ~/dot/vim/bundle/snipmate/snippets/.<CR>
+
+map <Leader>b :BufExplorer<CR>
+map <Leader>t :!rspec %<CR>
 
 
 autocmd BufWritePre * :%s/\s\+$//e
