@@ -3,6 +3,8 @@ alias ll="ls -lah"
 alias g="git"
 alias v="vim"
 alias ack="ack-grep"
+alias f="fg"
+alias s="screen"
 
 # rails
 alias sc="./script/console"
