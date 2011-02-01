@@ -9,7 +9,7 @@ snippet contf
 
 # form
 snippet ff
-	<% form_for @${1:model} do |f| -%>
+	<%= form_for @${1:model} do |f| -%>
 		<%= f.error_messages %>
 		<%= f.submit "${2:button}" %>
 	<% end -%>
