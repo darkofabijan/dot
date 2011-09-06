@@ -37,7 +37,7 @@ set numberwidth=5
 
 " Colors
 set t_Co=256
-colorscheme inkpot
+colorscheme desert
 set cursorline!
 
 " BufExplorer configuration
@@ -64,3 +64,7 @@ map <left> :bp<cr>
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
 
+cmap W w
+cmap E e
+cmap WQ wq
+cmap Q q
