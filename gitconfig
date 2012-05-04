@@ -1,9 +1,6 @@
 [user]
   name = Darko Fabijan
   email = darko@renderedtext.com
-[github]
-  user = darkofabijan
-  token = 2c024d9ad9c9fd55de62ee50785c2d44
 [color]
   branch = auto
   status = auto
