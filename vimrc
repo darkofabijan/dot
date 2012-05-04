@@ -37,8 +37,11 @@ set numberwidth=5
 
 " Colors
 set t_Co=256
-colorscheme desert
 set cursorline!
+syntax enable
+set background=dark
+" let g:solarized_termcolors=256
+colorscheme solarized
 
 " BufExplorer configuration
 let g:bufExplorerDefaultHelp=0
@@ -65,6 +68,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile *.html.erb set ft=html.eruby
 
 cmap W w
-cmap E e
 cmap WQ wq
 cmap Q q
