@@ -21,4 +21,5 @@
   who = shortlog -s --
   pl = pull
   ps = push
+  pru = remote prune origin
 
