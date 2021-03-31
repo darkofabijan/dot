@@ -10,7 +10,6 @@ jobs:
     docker:
       - image: circleci/elixir:1.9.4
     steps:
-      - checkout
       - run: echo "this is the build job"
   
 # Orchestrate or schedule a set of jobs
