@@ -19,7 +19,8 @@ jobs:
       - run: cat /proc/cpuinfo | grep MHz
       - run: sudo apt update -y
       - run: sudo apt install -y sysbench && sysbench cpu --threads=4 run
-
+      - run: sudo apt install -y p7zip-full
+      - run: 7z b -mmt1
   
 # Orchestrate or schedule a set of jobs
 workflows:
