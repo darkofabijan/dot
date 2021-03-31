@@ -17,6 +17,7 @@ jobs:
       - run: dd if=/dev/zero of=/tmp/test2.img bs=512 count=1000 oflag=dsync
       - run: echo "cpu"
       - run: cat /proc/cpuinfo | grep MHz
+      - run: sudo apt update -y
       - run: sudo apt install -y sysbench && sysbench cpu --threads=4 run
 
   
