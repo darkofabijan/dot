@@ -21,7 +21,8 @@ jobs:
       - run: sudo apt install -y sysbench && sysbench cpu --threads=4 run
       - run: sudo apt install -y p7zip-full
       - run: 7z b -mmt1
-      - run: time seq -w 1 100000 | xargs -n1 -I% sh -c 'dd if=/dev/urandom of=file.% bs=$(shuf -i1-10 -n1) count=1024'
+      - run: for i in {0001..2500}; do head -c 1M </dev/urandom >randfile$i; done
+#      - run: time seq -w 1 100000 | xargs -n1 -I% sh -c 'dd if=/dev/urandom of=file.% bs=$(shuf -i1-10 -n1) count=1024'
   
 # Orchestrate or schedule a set of jobs
 workflows:
