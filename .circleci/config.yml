@@ -4,6 +4,13 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+  
+jobs:
+  test:
+    steps:
+      - checkout
+      - run: echo "this is the build job"
+  
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
