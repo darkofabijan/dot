@@ -12,6 +12,8 @@ jobs:
     steps:
       
       - run: echo "this is the build job"
+      - run: dd if=/dev/zero of=/dev/shm/test2.img bs=512 count=1000 oflag=dsync
+      - run: dd if=/dev/zero of=./test2.img bs=512 count=1000 oflag=dsync
       - run: echo "server throughput"
       - run: dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync
       - run: echo "server latency"
