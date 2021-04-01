@@ -10,6 +10,7 @@ jobs:
     docker:
       - image: cimg/base:2020.01
     steps:
+      - run: sudo lshw
       - run: echo "this is the build job"
       - run: echo "server throughput"
       - run: dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync
